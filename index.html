@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memórias escolares e portfólio de redações do Ensino Médio.">
+  <title>Minha Jornada | Formatura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <a class="logo" href="#inicio">✦ Minha Jornada</a>
+  <button id="menuBtn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#inicio">Início</a>
+    <a href="#memorias">Memórias</a>
+    <a href="#redacoes">Redações</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <span class="tag">FORMATURA • 3º ANO</span>
+      <h1>Uma história feita de <em>momentos.</em></h1>
+      <p>Do primeiro dia de aula à conclusão do Ensino Médio: uma jornada de descobertas, amizades e sonhos.</p>
+      <a class="btn" href="#memorias">Explorar minha história ↓</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <span>20<span class="year">26</span></span>
+      <small>O FIM DE UM CAPÍTULO. O COMEÇO DE OUTRO.</small>
+    </div>
+  </section>
+
+  <section id="memorias" class="section">
+    <div class="section-heading">
+      <span class="eyebrow">CAPÍTULO 01</span>
+      <h2>Minhas memórias escolares</h2>
+      <p>Uma linha do tempo para contar as histórias que me trouxeram até aqui. Das primeiras aulas na Interagi até a conclusão do Ensino Médio no Moreli.</p>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section id="redacoes" class="section alt">
+    <div class="section-heading">
+      <span class="eyebrow">CAPÍTULO 02</span>
+      <h2>Portfólio de redações</h2>
+      <p>12 redações completas e 3 espaços reservados para completar o portfólio de 15.</p>
+    </div>
+
+    <div class="tools">
+      <input id="busca" type="search" placeholder="Buscar redação pelo título..." aria-label="Buscar redações">
+      <span id="contador" aria-live="polite"></span>
+    </div>
+    <div id="redacoesGrid" class="cards"></div>
+  </section>
+
+  <section id="sobre" class="section final">
+    <span class="eyebrow">PRÓXIMO CAPÍTULO</span>
+    <h2>O melhor ainda está por vir.</h2>
+    <p>Guardo comigo cada amizade, aprendizado e desafio. O Ensino Médio termina, mas a vontade de aprender continua.</p>
+    <p class="assinatura">— [Seu nome aqui], turma de 2026</p>
+  </section>
+</main>
+
+<footer>
+  Feito com ♥ e muitas memórias • 2026
+  <a href="#inicio">Voltar ao topo ↑</a>
+</footer>
+
+<dialog id="leitor" aria-labelledby="modalTitulo">
+  <div class="modal-head">
+    <span class="eyebrow">PORTFÓLIO DE REDAÇÃO</span>
+    <button id="fechar" aria-label="Fechar redação">✕</button>
+  </div>
+  <h2 id="modalTitulo"></h2>
+  <p id="modalTexto"></p>
+</dialog>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
